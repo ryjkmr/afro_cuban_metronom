@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Afro Cuban Metronom</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style type="text/css">
+    * {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -khtml-user-select: none;
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+    }
+
+    html {
+      touch-action: manipulation;
+    }
+  </style>
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+
+<body>
+  <div class="player container">
+    <h3>Afro Cuban Metronom</h3>
+    <span class="">tempo:</span><output id="tempo_disp">120</output><br><input type="range" value="120" min="50"
+      max="250" step="1" id="tempo_slider" class="form-control-range"><br>
+
+    <div class="btn-group-vertical  container ">
+
+      <input type="button" value="standard metronom" id="metronomeBtn"
+        class="rythmBtn btn btn-lg btn-block btn-primary border border-light" />
+      <input type="button" value="rumba clave" id="rumbaBtn"
+        class="rythmBtn btn btn-lg btn-block btn-primary  border border-light" />
+      <input type="button" value="rumba clave con kata" id="rumbaconkataBtn"
+        class="rythmBtn btn btn-lg btn-block btn-primary  border border-light" />
+      <input type="button" value="bembe clave" id="bembeBtn"
+        class="rythmBtn btn btn-lg btn-block btn-primary border border-light" />
+      <input type="button" value="son clave 3-2" id="son32Btn"
+        class="rythmBtn btn btn-lg btn-block btn-primary border border-light" />
+      <input type="button" value="son clave 2-3" id="son23Btn"
+        class="rythmBtn btn btn-lg btn-block btn-primary border border-light" /><br>
+      <input type="button" value="stop" class="stopBtn btn btn-lg btn-block btn-danger" disabled />
+    </div>
+    <div id="debug"></div>
+    by ryjkmr
+  </div>
+  <div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/0.12.63/Tone.js"></script>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
